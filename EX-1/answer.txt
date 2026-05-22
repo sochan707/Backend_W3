@@ -1,0 +1,16 @@
+1. What challenges did you face when using the native http module that Express.js helped you solve?
+=> There are a lof challenges that I faced andExpress.js helped me solve it such as:
+_ Write a lot of lines of code
+_ for each route I have check the URL and method by myself
+_ messy handling errors
+_ Sending responses means manually setting headers and ending the response.
+
+2. How does Express simplify route handling compared to the native HTTP server?
+=> 
+_ instead of checking url and method myself, I can just write app.get('/home') or app.post('/home')
+_ Each route has its own function, so the code is cleaner.
+_ Dynamic URLs like /users/:id are easy, req.params.id gives the value.
+_ Middleware (app.use()) can run code for many routes without repeating it.
+
+3. What does middleware mean in Express, and how would you replicate similar behavior using the native module?
+=> In Express, middleware is a function that runs everytime a request comes in. With plain http, I’d have to write all these functions myself and call them for every request while Express does it automatically and neatly.

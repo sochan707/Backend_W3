@@ -1,0 +1,10 @@
+1.	What happens when you visit a URL that doesn’t match any of the three defined?
+	If show 404 not found
+2.	Why do we check both the req.url and req.method?
+	Check req.url to see which route the client wants. And check req.method to see what action they want to perform on that resource.
+3.	What MIME type (Content-Type) do you set when returning HTML instead of plain text?
+	Text/html
+4.	How might this routing logic become harder to manage as routes grow?
+	As more routes are added, this switch-based setup becomes hard to manage because it grows into a large, repetitive, and tightly coupled block of code that’s difficult to organize, extend, and maintain.
+5.	What benefits might a framework offer to simplify this logic?
+	providing built-in routing, cleaner syntax for handling different HTTP methods, support for middleware, and better project structure, which reduces repetitive code and makes the application easier to scale and maintain.
